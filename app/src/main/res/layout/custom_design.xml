@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imgV"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Name of person"
+        app:layout_constraintStart_toEndOf="@id/imgV"
+        app:layout_constraintTop_toTopOf="@id/imgV"
+
+        android:layout_marginStart="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Phone of person"
+        app:layout_constraintTop_toBottomOf="@id/Tv1"
+        app:layout_constraintStart_toStartOf="@id/Tv1"
+        />
+
+    <TextView
+        android:id="@+id/Tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Description"
+        app:layout_constraintStart_toStartOf="@id/Tv1"
+app:layout_constraintTop_toBottomOf="@id/Tv2"
+        android:layout_marginStart="8dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
